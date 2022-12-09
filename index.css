@@ -1,0 +1,67 @@
+body{
+    font  : 1.3rem sans-serif;
+    padding : 0.5em;
+    margin  : 0;
+    background : rgb(14, 201, 243);
+}
+p{
+    font: 15px verdana, Geneva, Arial;
+    color: rgb(2, 174, 36);
+}
+h1{
+    padding: 1px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: aquamarine;
+}
+h2{
+    margin-bottom: 80px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: aquamarine;
+    
+}
+
+form{
+   width: 400px;
+   background: #24303c;
+   padding: 50px;
+   margin: auto;
+   margin-top: 100px;
+   border-radius: 30px;
+   font-family: 'calibri';
+   color: white;
+
+}
+input{
+ width: 100%;
+ background: #24303c;
+ padding: 10px;
+ border-radius: 10px;
+ margin-bottom: 16px;
+ border: 2px solid #1f53c5;
+ font-family: 'calibri';
+ font-size: 18px;
+}
+
+table{
+    background-color: white;
+    text-align: left;
+    width: 100%;
+}
+th, td{
+    padding: 20px;
+}
+thead{
+    background-color: #246355;
+    border-bottom: solid 5px #0f362d;
+    color: white;
+}
+tr:nth-child(even){
+    background-color: #ddd;
+}
+tr:hover{
+    background-color: #369681;
+    color: white;
+}

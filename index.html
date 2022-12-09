@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deber-1</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!--
+    Creacion de la tabla con sus respectivas celdas y columnas
+    -->
+
+
+   <table>
+    <div class="tabla">
+        <h2>Tabla</h2>
+    <colgroup>
+        <col id="numero"/>
+        <col id="apellidos"/>
+        <col id="nombres"/>
+        <col id="ciudad"/>
+        <col id="fecha"/>
+    </colgroup>
+    </div>
+    <div class="helementos">
+    <thead>
+        <tr>
+            <th>Número</th>
+            <th>Apellido</th>
+            <th>Nombre</th>
+            <th>Ciudad</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2423</td>
+            <td>Pérez Martínez</td>
+            <td>Juan José</td>
+            <td>Portoviejo</td>
+            <td>2022-11-10</td>
+        </tr>
+        <tr>
+            <td>4423</td>
+            <td>Martínez Gómez</td>
+            <td>María Beatriz</td>
+            <td>Manta</td>
+            <td>2022-01-01</td>
+        </tr>
+        <tr>
+            <td>4334</td>
+            <td>Gómez Rodríguez</td>
+            <td>Carlos Alberto</td>
+            <td>Chone</td>
+            <td>2022-05-01</td>
+        </tr>
+        <tr>
+            <td>4523</td>
+            <td>Rodríguez Moreno</td>
+            <td>Sofía Ana</td>
+            <td>Bahía</td>
+            <td>2022-02-01</td>
+        </tr>
+    </tbody>
+    </div>
+   </table>
+   <!--
+   Creacion del formulario, para gurdar los datos se utiliza php, por el metodo post, para añadir los archivos
+   se puso enctype="multipart/form-data" 
+   -->
+  <div class="formulario">
+    <h1 class="texto">Formulario</h1>
+    <form action="guardar.php" method="post" enctype="multipart/form-data" >
+        <p> Nombres<input type="text" name="nombre" placeholder="ingrese sus nombres"></p>
+        <p>Apellidos<input type="text" name="apellido" placeholder="ingrese sus apellidos" ></p>
+        <P>Ciudad<input type="text" name="ciudad" placeholder="ingrese su ciudad"></P>
+        <p>Fecha<input type="date" name="fecha" placeholder="Elija su fecha de ingreso"></p>
+        <p>Imagen<input type="file"name="imagen" placeholder="colocar imagen de perfil"></p>
+        <P>Comprobante de pago<input type="file" name="pago" placeholder="comprobante de pago"></P>
+        <input type="submit" value="Enviar">
+       </form>
+  </div>
+
+    
+</body>
+</html>
